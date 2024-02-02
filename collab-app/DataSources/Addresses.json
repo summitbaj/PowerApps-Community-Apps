@@ -1,0 +1,167 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "customeraddresses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "customeraddress",
+    "MaxGetRowsCount": 500,
+    "Name": "Addresses",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_parentid_value": "Parent",
+      "addressnumber": "Address Number",
+      "addresstypecode": "Address Type",
+      "city": "City",
+      "composite": "Address (composite)",
+      "country": "Country/Region",
+      "county": "County",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "CustomerAddress_AsyncOperations": "System Jobs",
+      "CustomerAddress_BulkDeleteFailures": "Bulk Delete Failures",
+      "customeraddress_principalobjectattributeaccess": "Field Sharing",
+      "CustomerAddress_ProcessSessions": "Process Sessions",
+      "CustomerAddress_SyncErrors": "Sync Errors",
+      "customeraddressid": "Address (customeraddressid)",
+      "exchangerate": "Exchange Rate",
+      "fax": "Fax",
+      "freighttermscode": "Freight Terms",
+      "importsequencenumber": "Import Sequence Number",
+      "latitude": "Latitude",
+      "line1": "Street 1",
+      "line2": "Street 2",
+      "line3": "Street 3",
+      "longitude": "Longitude",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "msemr_enddate": "End Date",
+      "msemr_startdate": "Start Date",
+      "name": "Address Name",
+      "overriddencreatedon": "Record Created On",
+      "postalcode": "ZIP/Postal Code",
+      "postofficebox": "Post Office Box",
+      "primarycontactname": "Address Contact",
+      "shippingmethodcode": "Shipping Method",
+      "stateorprovince": "State/Province",
+      "telephone1": "Main Phone",
+      "telephone2": "Phone 2",
+      "telephone3": "Telephone 3",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "upszone": "UPS Zone",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "utcoffset": "UTC Offset",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Addresses",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Addresses (Views)",
+    "Name": "_customeraddress_views",
+    "RelatedEntityName": "Addresses",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "03315b35-4585-4447-a4d2-059cf79ca0fd": "Customer Address Associated View",
+      "081847fb-4097-426a-affe-904d54d9dfec": "Customer Address Lookup View",
+      "98f8a370-a3cc-4181-986a-75d2d5fc71ba": "All Customer Addresses",
+      "fa6d84a4-2450-4375-8288-5083b58357c4": "Customer Address Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Address Type (Addresses)",
+    "Name": "customeraddress_addresstypecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Bill To",
+      "2": "Ship To",
+      "3": "Primary",
+      "4": "Other",
+      "935000000": "home",
+      "935000001": "work",
+      "935000002": "temp",
+      "935000003": "old",
+      "935000004": "Item"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "addresstypecode",
+        "OptionSetReferenceEntityName": "Addresses"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "addresstypecode",
+    "RelatedEntityName": "Addresses",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Freight Terms (Addresses)",
+    "Name": "customeraddress_freighttermscode",
+    "OptionSetInfoNameMapping": {
+      "1": "FOB",
+      "2": "No Charge"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "freighttermscode",
+        "OptionSetReferenceEntityName": "Addresses"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "freighttermscode",
+    "RelatedEntityName": "Addresses",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Object Type  (Addresses)",
+    "Name": "customeraddress_objecttypecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Account",
+      "2": "Contact"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "objecttypecode",
+        "OptionSetReferenceEntityName": "Addresses"
+      }
+    },
+    "OptionSetTypeKey": "EntityNameType",
+    "RelatedColumnInvariantName": "objecttypecode",
+    "RelatedEntityName": "Addresses",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Shipping Method (Addresses)",
+    "Name": "customeraddress_shippingmethodcode",
+    "OptionSetInfoNameMapping": {
+      "1": "Airborne",
+      "2": "DHL",
+      "3": "FedEx",
+      "4": "UPS",
+      "5": "Postal Mail",
+      "6": "Full Load",
+      "7": "Will Call"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "shippingmethodcode",
+        "OptionSetReferenceEntityName": "Addresses"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "shippingmethodcode",
+    "RelatedEntityName": "Addresses",
+    "Type": "OptionSetInfo"
+  }
+]

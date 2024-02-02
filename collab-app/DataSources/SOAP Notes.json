@@ -1,0 +1,186 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "smvs_soapnotes",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "smvs_soapnote",
+    "MaxGetRowsCount": 500,
+    "Name": "SOAP Notes",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "smvs_additionalnotes": "Additional Notes",
+      "smvs_assessment": "Assessment",
+      "smvs_assessmentsummary": "Assessment Summary",
+      "smvs_bloodpressurebp": "Blood Pressure (BP)",
+      "smvs_chiefcomplaint": "Chief Complaint",
+      "smvs_date": "Date",
+      "smvs_duration_of_smoking": "Duration of smoking",
+      "smvs_educationandcounseling": "Education and Counseling",
+      "smvs_Encounter": "Encounter",
+      "smvs_failed_methods": "Failed methods",
+      "smvs_familyhistory": "Family History",
+      "smvs_followup": "Followup",
+      "smvs_fulltermpregnancy": "Full Term Pregnancy",
+      "smvs_heartratehr": "Heart Rate (HR)",
+      "smvs_height": "Height",
+      "smvs_labresult": "Lab Result",
+      "smvs_medicalhistory": "Medical History",
+      "smvs_name": "Name",
+      "smvs_number_of_cigarettes_smoked_per_day": "Number of cigarettes smoked per day",
+      "smvs_objective": "Objective",
+      "smvs_objective_notes": "Objective Notes",
+      "smvs_Patient": "Patient",
+      "smvs_patients_specific_concerns": "Patient's specific concerns",
+      "smvs_pharmacistname": "Pharmacist Name",
+      "smvs_pharmacistsignature": "Pharmacist Signature",
+      "smvs_pharmacistsignatureid": "smvs_PharmacistSignatureId",
+      "smvs_plan": "Plan",
+      "smvs_pregnant": "Pregnant?",
+      "smvs_previous_quit_attempts": "Previous quit attempts",
+      "smvs_primaryphysiciancontactdetail": "Primary Physician Full Name",
+      "smvs_primaryphysicianphonenumber": "Primary Physician Phone Number",
+      "smvs_reason_for_motivation_to_quit_smoking": "Reason for motivation to quit smoking",
+      "smvs_reason_for_unlock": "Reason for Unlock",
+      "smvs_referrals": "Referrals",
+      "smvs_respiratoryrate": "Respiratory Rate",
+      "smvs_smoking_related_health_concerns": "Smoking-Related Health Concerns",
+      "smvs_smvs_immunizationhistory_SOAPNote_smvs_so": "Immunization Histories",
+      "smvs_smvs_medicationhistory_SOAPNote_smvs_soap": "Medication Histories",
+      "smvs_smvs_soapresponse_SOAPNote_smvs_soapnote": "SOAP Responses",
+      "smvs_soap_response_json": "SOAP Response JSON",
+      "smvs_soapimage": "SOAP Image",
+      "smvs_soapimageid": "smvs_SOAPImageId",
+      "smvs_soapnote_AsyncOperations": "System Jobs",
+      "smvs_soapnote_BulkDeleteFailures": "Bulk Delete Failures",
+      "smvs_soapnote_DuplicateBaseRecord": "Duplicate Records (smvs_soapnote_DuplicateBaseRecord)",
+      "smvs_soapnote_DuplicateMatchingRecord": "Duplicate Records (smvs_soapnote_DuplicateMatchingRecord)",
+      "smvs_soapnote_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "smvs_soapnote_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "smvs_soapnote_ProcessSession": "Process Sessions",
+      "smvs_SOAPNote_smvs_SOAPNote_smvs_AllergyH": "Allergy Histories",
+      "smvs_soapnote_SyncErrors": "Sync Errors",
+      "smvs_soapnoteid": "SOAP Note",
+      "smvs_soapstatus": "SOAP Status",
+      "smvs_socialhistory": "Social History",
+      "smvs_surgicalhistory": "Surgical History",
+      "smvs_temperaturetemp": "Temperature (Temp)",
+      "smvs_totalpregnancy": "Total Pregnancy",
+      "smvs_treatmentplan": "Treatment Plan",
+      "smvs_weight": "Weight",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "SOAP Notes",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "SOAP Notes (Views)",
+    "Name": "_smvs_soapnote_views",
+    "RelatedEntityName": "SOAP Notes",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0593daa3-1aab-45bf-8126-33e7465bd13a": "Inactive SOAP Notes",
+      "3f64d42a-4def-411c-81b1-586a3b2c236c": "SOAP Note Associated View",
+      "5cbae21b-f331-4426-b5f8-005ebd5d860c": "Active SOAP Notes",
+      "68b11bd9-78a3-4674-8fd8-4f9f57329419": "SOAP Note Advanced Find View",
+      "d047eab8-0aea-4357-b091-5fcffa67e41a": "SOAP Note Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Pregnant? (SOAP Notes)",
+    "Name": "smvs_soapnote_smvs_pregnant",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_pregnant",
+        "OptionSetReferenceEntityName": "SOAP Notes"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "smvs_pregnant",
+    "RelatedEntityName": "SOAP Notes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (SOAP Notes)",
+    "Name": "smvs_soapnote_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "SOAP Notes"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "SOAP Notes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (SOAP Notes)",
+    "Name": "smvs_soapnote_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "SOAP Notes"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "SOAP Notes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "SOAP Progress",
+    "Name": "smvs_soapstatus",
+    "OptionSetInfoNameMapping": {
+      "153940000": "In Progress",
+      "153940001": "Completed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_soapstatus",
+        "OptionSetReferenceEntityName": "SOAP Notes"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "smvs_soapstatus",
+    "RelatedEntityName": "SOAP Notes",
+    "Type": "OptionSetInfo"
+  }
+]

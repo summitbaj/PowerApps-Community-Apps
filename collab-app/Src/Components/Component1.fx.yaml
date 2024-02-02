@@ -1,0 +1,112 @@
+Component1 As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    InputList: |-
+        =Table({Id: GUID(), Title: "Sample Text"})
+    SearchText: =TextInput3.Text
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    TextInput3 As text:
+        BorderColor: =RGBA(219, 219, 219, 1)
+        Default: =""
+        Height: =55
+        HintText: ="Search Text"
+        Width: =640
+        ZIndex: =2
+
+    Container2 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =Min(500,Label3.Height+Gallery4.Height+If(Button4.Visible,Button4.Height,0))
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Visible: =!IsBlank(TextInput3)
+        Width: =614
+        X: =10
+        Y: =65
+        ZIndex: =4
+
+        Label3 As label:
+            AlignInContainer: =AlignInContainer.Stretch
+            Color: =RGBA(116, 116, 116, 1)
+            PaddingLeft: =15
+            PaddingTop: =15
+            Text: ="ALL ITEMS"
+            ZIndex: =1
+
+        "Gallery4 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+            DelayItemLoading: =true
+            FillPortions: =0
+            Height: =Self.TemplateHeight*Self.AllItemsCount
+            Items: =Component1.InputList
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =320
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =80
+            Y: =55
+            ZIndex: =2
+
+            Title2 As label:
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Title
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Parent.TemplateWidth - 86
+                X: =16
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            Separator2 As rectangle:
+                Fill: =RGBA(237, 237, 237, 1)
+                Height: =2
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =3
+
+            Rectangle1 As rectangle:
+                Height: =Parent.TemplateHeight - Separator2.Height
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.IsSelected
+                Width: =4
+                ZIndex: =4
+
+            Button5 As button:
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =80
+                HoverFill: =ColorFade(RGBA(0, 0, 0, 0.1), -20%)
+                OnSelect: =Select(Parent)
+                Text: =""
+                Width: =614
+                ZIndex: =5
+
+        Button4 As button:
+            Align: =Align.Left
+            AlignInContainer: =AlignInContainer.Stretch
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Normal
+            Height: =52
+            HoverColor: =RGBA(128, 128, 128, 1)
+            HoverFill: =RGBA(250, 250, 250, 1)
+            PaddingLeft: =15
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: =TextInput3.Text&" (Add Serial Number)"
+            Visible: =Gallery4.AllItemsCount = 0
+            Width: =640
+            Y: =588
+            ZIndex: =3
+

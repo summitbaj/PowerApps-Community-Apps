@@ -1,0 +1,343 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "msemr_healthcareservices",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "msemr_healthcareservice",
+    "MaxGetRowsCount": 500,
+    "Name": "Sub Services",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "msemr_appointmentrequired": "Appointment Required",
+      "msemr_availabilityexceptions": "Availability Exceptions",
+      "msemr_Category": "Category",
+      "msemr_comment": "Comment",
+      "msemr_Eligibility": "Eligibility",
+      "msemr_eligibilitynote": "Eligibility note",
+      "msemr_extradetails": "Extra Details",
+      "msemr_healthcareservice": "Healthcare Service (msemr_healthcareservice)",
+      "msemr_healthcareservice_Annotations": "Notes",
+      "msemr_healthcareservice_AsyncOperations": "System Jobs",
+      "msemr_healthcareservice_BulkDeleteFailures": "Bulk Delete Failures",
+      "msemr_healthcareservice_DuplicateBaseRecord": "Duplicate Records (msemr_healthcareservice_DuplicateBaseRecord)",
+      "msemr_healthcareservice_DuplicateMatchingRecord": "Duplicate Records (msemr_healthcareservice_DuplicateMatchingRecord)",
+      "msemr_healthcareservice_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "msemr_healthcareservice_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "msemr_healthcareservice_ProcessSession": "Process Sessions",
+      "msemr_healthcareservice_SyncErrors": "Sync Errors",
+      "msemr_healthcareserviceid": "Healthcare Service (msemr_healthcareserviceid)",
+      "msemr_msemr_healthcareservice_msemr_appointmentemrparticipant_ActorHealthCareService": "Appointment (EMR) Participants",
+      "msemr_msemr_healthcareservice_msemr_devicerequest_PerformerTypeHealthcareService": "Device Requests",
+      "msemr_msemr_healthcareservice_msemr_healthcareserviceavailabletime_HealthcareService": "Healthcare Service Available Times",
+      "msemr_msemr_healthcareservice_msemr_healthcareservicecategory_HealthcareService": "Services",
+      "msemr_msemr_healthcareservice_msemr_healthcareservicecharacteristic_HealthcareService": "Healthcare Service Characteristics",
+      "msemr_msemr_healthcareservice_msemr_healthcareservicecoveragearea_HealthcareService": "Healthcare Service Coverage Areas",
+      "msemr_msemr_healthcareservice_msemr_healthcareserviceendpoint_HealthcareService": "Healthcare Service Endpoints",
+      "msemr_msemr_healthcareservice_msemr_healthcareservicelocation_HealthcareService": "Healthcare Service Locations",
+      "msemr_msemr_healthcareservice_msemr_healthcareserviceprogramname_HealthcareService": "Healthcare Service Program Name",
+      "msemr_msemr_healthcareservice_msemr_healthcareserviceprovision_HealthcareService": "Healthcare Service Provision",
+      "msemr_msemr_healthcareservice_msemr_healthcareservicereferralmethod_HealthcareService": "Healthcare Service Referral Methods",
+      "msemr_msemr_healthcareservice_msemr_healthcareservicespecialty_HealthcareService": "Healthcare Service Specialties",
+      "msemr_msemr_healthcareservice_msemr_healthcareservicetelecomm_HealthcareService": "Healthcare Service Telecom",
+      "msemr_msemr_healthcareservice_msemr_practitionerrolehealthcareservice_Healthcareservice": "Practitioner Role Healthcare Services",
+      "msemr_msemr_healthcareservice_msemr_proceduredefinition_ServiceDefinition": "Procedure Definitions",
+      "msemr_msemr_healthcareservice_msemr_procedurerequest_PerformerHealthCareService": "Procedure Requests",
+      "msemr_msemr_healthcareservice_msemr_referralrequestrecipient_HealthcareService": "Referral Request Recipients",
+      "msemr_msemr_healthcareservice_msemr_schedule_ActorHealthCareService": "Schedules (msemr_msemr_healthcareservice_msemr_schedule_ActorHealthCareService)",
+      "msemr_msemr_healthcareservice_msemr_scheduleactor_ActorHealthCareService": "Schedule Actors",
+      "msemr_name": "Name",
+      "msemr_notavailabledescription": "Description",
+      "msemr_notavailableduringenddatetime": "End Datetime",
+      "msemr_notavailableduringstartdatetime": "Start Datetime",
+      "msemr_Providedby": "Provided by",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "smvs_age_limit": "Minimum Age Limit",
+      "smvs_age_limit_validation_info": "Age Limit Validation Info",
+      "smvs_default_admin_bill_rate": "Default Admin Bill Rate",
+      "smvs_default_admin_bill_rate_base": "Default Admin Bill Rate (Base)",
+      "smvs_default_status": " Is generic sub- service?",
+      "smvs_default_status_for_first_appt": "Default Status for First Appt",
+      "smvs_default_status_for_second_appt": "Default Status for Second Appt",
+      "smvs_default_vaccine_bill_rate": "Default Vaccine Bill Rate",
+      "smvs_default_vaccine_bill_rate_base": "Default Vaccine Bill Rate (Base)",
+      "smvs_EligibilityQuestion_msemr_healthcare": "Eligibility Questions",
+      "smvs_expected_amount": "Expected Amount",
+      "smvs_expected_amount_base": "Expected Amount (Base)",
+      "smvs_expected_vaccine_cost": "Expected Vaccine Cost",
+      "smvs_expected_vaccine_cost_base": "Expected Vaccine Cost (Base)",
+      "smvs_factsheeturl": "Factsheet URL",
+      "smvs_HealthcareCategory": "Service",
+      "smvs_immunocompromised_status": "Immunocompromised Status",
+      "smvs_label": "Label",
+      "smvs_language": "not used",
+      "smvs_language_code": "Language",
+      "smvs_maximum_age_limit": "Maximum Age Limit",
+      "smvs_msemr_appointmentemr_Service_msemr_health": "Appointments (EMR)",
+      "smvs_msemr_healthcareservice_msemr_healthcares": "Billing Configurations",
+      "smvs_msemr_healthcareservice_msemr_slot_msemr_": "Slots (smvs_msemr_healthcareservice_msemr_slot_msemr_)",
+      "smvs_msemr_healthcareservice_parent_health_ser": "Sub Services",
+      "smvs_msemr_healthcareservice_smvs_appointment_": "Appointment Days",
+      "smvs_msemr_healthcareservice_smvs_CPTHCPCSCode": "CPT/HCPCS Codes",
+      "smvs_msemr_slot_HealthcareService_msemr_health": "Slots (smvs_msemr_slot_HealthcareService_msemr_health)",
+      "smvs_negativebuffer": "Negative Buffer",
+      "smvs_out_of_pocket": "Out of Pocket",
+      "smvs_out_of_pocket_text": "Out of Pocket Text",
+      "smvs_parent_health_service": "Parent Health Service",
+      "smvs_PatientScreeningQuestion_msemr_healt": "Patient Screening Questions",
+      "smvs_positive_buffer": "Positive Buffer (smvs_positive_buffer)",
+      "smvs_positivebuffer": "Positive Buffer (smvs_positivebuffer)",
+      "smvs_pricing": "Pricing",
+      "smvs_pricing_base": "Pricing (Base)",
+      "smvs_regimendose": "Regimen Dose",
+      "smvs_schedule_msemr_healthcareservice_mse": "Schedules (smvs_schedule_msemr_healthcareservice_mse)",
+      "smvs_service_information": "Service Information",
+      "smvs_SOAPTemplate": "SOAP Template",
+      "smvs_sub_service_vaccine_type": "Vaccine Types",
+      "smvs_subgrid_control": "Subgrid Control",
+      "smvs_subgrid_control_screening": "Subgrid Control Screening",
+      "smvs_translation_count": "Translation Count",
+      "smvs_translation_status": "Translation Status",
+      "smvs_vaccinedaygap": "VaccineDayGap",
+      "smvs_waitlist_subservice": "Wait Lists",
+      "smvs_website_content_msemr_healthservice": "Localize Website Contents",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Sub Services",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Sub Services (Views)",
+    "Name": "_msemr_healthcareservice_views",
+    "RelatedEntityName": "Sub Services",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0ae1eea4-7077-4f4d-a0eb-371578a96c5d": "Healthcare Service Lookup View",
+      "0d9b57d3-411f-ec11-b6e6-000d3a1f2c53": "Associated services",
+      "0fb4f043-c0a8-eb11-b1ac-000d3a9bd897": "All Translation Healthcare Services",
+      "796a1db2-232c-46cd-bf20-0d7e1a2c4a7a": "Healthcare Service Advanced Find View",
+      "93920cad-bea8-eb11-b1ac-000d3a9bd897": "Translation Health Service",
+      "9ee25cce-c47f-eb11-a812-000d3a9c24b3": "All Sub Services",
+      "abdee4a4-1806-4336-914d-41344892b619": "Inactive Sub Services",
+      "c5bc4710-65d5-4917-abcd-7573d96c9760": "Healthcare Service Associated View",
+      "dafc9662-92e6-4f74-ad7e-a1a197c9117d": "Active Sub Services"
+    }
+  },
+  {
+    "DisplayName": "Appointment Status Options",
+    "Name": "msemr_appointmentstatus",
+    "OptionSetInfoNameMapping": {
+      "935000000": "Proposed",
+      "935000001": "Pending",
+      "935000002": "Booked",
+      "935000003": "Arrived",
+      "935000004": "Fulfilled",
+      "935000005": "Cancelled",
+      "935000006": "No Show",
+      "935000007": "Entered In Error",
+      "935000008": "Checked-In",
+      "935000009": "Waitlist"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_default_status_for_first_appt",
+        "OptionSetReferenceEntityName": "Sub Services"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "smvs_default_status_for_second_appt",
+        "OptionSetReferenceEntityName": "Sub Services"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "smvs_default_status_for_first_appt",
+    "RelatedEntityName": "Sub Services",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Appointment Required (Sub Services)",
+    "Name": "msemr_healthcareservice_msemr_appointmentrequired",
+    "OptionSetInfoNameMapping": {
+      "0": "True",
+      "1": "False"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msemr_appointmentrequired",
+        "OptionSetReferenceEntityName": "Sub Services"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "msemr_appointmentrequired",
+    "RelatedEntityName": "Sub Services",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Sub Services)",
+    "Name": "msemr_healthcareservice_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Sub Services"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Sub Services",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Sub Services)",
+    "Name": "msemr_healthcareservice_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Sub Services"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Sub Services",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is generic sub- service? (Sub Services)",
+    "Name": "smvs_msemr_healthcareservice_smvs_default_status",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_default_status",
+        "OptionSetReferenceEntityName": "Sub Services"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "smvs_default_status",
+    "RelatedEntityName": "Sub Services",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Immunocompromised Status (Sub Services)",
+    "Name": "smvs_msemr_healthcareservice_smvs_immunocompromised_status",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_immunocompromised_status",
+        "OptionSetReferenceEntityName": "Sub Services"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "smvs_immunocompromised_status",
+    "RelatedEntityName": "Sub Services",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Out of Pocket (Sub Services)",
+    "Name": "smvs_msemr_healthcareservice_smvs_out_of_pocket",
+    "OptionSetInfoNameMapping": {
+      "0": "Off",
+      "1": "On"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_out_of_pocket",
+        "OptionSetReferenceEntityName": "Sub Services"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "smvs_out_of_pocket",
+    "RelatedEntityName": "Sub Services",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Regimen Dose Options",
+    "Name": "smvs_regimendose",
+    "OptionSetInfoNameMapping": {
+      "153940000": "1st Dose only",
+      "153940001": "2nd Dose only",
+      "153940002": "Both Doses"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_regimendose",
+        "OptionSetReferenceEntityName": "Sub Services"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "smvs_regimendose",
+    "RelatedEntityName": "Sub Services",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Translation Status",
+    "Name": "smvs_translation_status",
+    "OptionSetInfoNameMapping": {
+      "153940000": "Pending",
+      "153940001": "In Progress",
+      "153940002": "Completed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_translation_status",
+        "OptionSetReferenceEntityName": "Sub Services"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "smvs_translation_status",
+        "OptionSetReferenceEntityName": "Localize Website Contents"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "smvs_translation_status",
+    "RelatedEntityName": "Sub Services",
+    "Type": "OptionSetInfo"
+  }
+]

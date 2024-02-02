@@ -1,0 +1,168 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "smvs_soapquestions",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "smvs_soapquestion",
+    "MaxGetRowsCount": 500,
+    "Name": "SOAP Questions",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "smvs_choicevalues": "Choice Values",
+      "smvs_question": "Question",
+      "smvs_required": "Required",
+      "smvs_smvs_soapresponse_SOAPQuestion_smvs_soapq": "SOAP Responses",
+      "smvs_smvs_soaptemplatequestionassignment_Quest": "SOAP Template Question Assignments",
+      "smvs_soapcategory": "Category",
+      "smvs_soapquestion_AsyncOperations": "System Jobs",
+      "smvs_soapquestion_BulkDeleteFailures": "Bulk Delete Failures",
+      "smvs_soapquestion_DuplicateBaseRecord": "Duplicate Records (smvs_soapquestion_DuplicateBaseRecord)",
+      "smvs_soapquestion_DuplicateMatchingRecord": "Duplicate Records (smvs_soapquestion_DuplicateMatchingRecord)",
+      "smvs_soapquestion_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "smvs_soapquestion_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "smvs_soapquestion_ProcessSession": "Process Sessions",
+      "smvs_soapquestion_SyncErrors": "Sync Errors",
+      "smvs_soapquestionid": "SOAP Question",
+      "smvs_type": "Type",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "SOAP Questions",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "SOAP Questions (Views)",
+    "Name": "_smvs_soapquestion_views",
+    "RelatedEntityName": "SOAP Questions",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "36dfe01d-dde7-4501-9e31-bcf565c7904c": "SOAP Question Lookup View",
+      "690a48a4-0299-43c8-b1ca-aee2d23c729d": "SOAP Question Advanced Find View",
+      "7cb0cb05-85a3-40fa-8fbe-aaeec4f83fca": "SOAP Question Associated View",
+      "cbe73d7b-a1f0-4135-912b-7a0c64a2c0c7": "Inactive SOAP Questions",
+      "cd8daa9c-02a0-4302-ba69-5d1f1593cdd1": "Active SOAP Questions"
+    }
+  },
+  {
+    "DisplayName": "Required",
+    "Name": "smvs_required",
+    "OptionSetInfoNameMapping": {
+      "153940000": "Optional",
+      "153940001": "Required"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_required",
+        "OptionSetReferenceEntityName": "SOAP Questions"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "smvs_required",
+    "RelatedEntityName": "SOAP Questions",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "SOAP Field Type",
+    "Name": "smvs_soapfieldtype",
+    "OptionSetInfoNameMapping": {
+      "153940000": "Long Text",
+      "153940001": "Short Text",
+      "153940002": "Option set",
+      "153940003": "Multiple Choice",
+      "153940004": "Date"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_type",
+        "OptionSetReferenceEntityName": "SOAP Questions"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "smvs_type",
+    "RelatedEntityName": "SOAP Questions",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (SOAP Questions)",
+    "Name": "smvs_soapquestion_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "SOAP Questions"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "SOAP Questions",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (SOAP Questions)",
+    "Name": "smvs_soapquestion_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "SOAP Questions"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "SOAP Questions",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "SOAP Category",
+    "Name": "smvs_soaptype",
+    "OptionSetInfoNameMapping": {
+      "153940000": "Subjective",
+      "153940001": "Objective",
+      "153940002": "Assessment",
+      "153940003": "Plan"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_soapcategory",
+        "OptionSetReferenceEntityName": "SOAP Questions"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "smvs_soapcategory",
+    "RelatedEntityName": "SOAP Questions",
+    "Type": "OptionSetInfo"
+  }
+]

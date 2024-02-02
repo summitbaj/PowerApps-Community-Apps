@@ -1,0 +1,121 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "smvs_soaptemplatequestionassignments",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "smvs_soaptemplatequestionassignment",
+    "MaxGetRowsCount": 500,
+    "Name": "SOAP Template Question Assignments",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "smvs_include_in_action_plan": "Include in Action Plan",
+      "smvs_name": "Name",
+      "smvs_Question": "Question",
+      "smvs_questionorder": "Question Order",
+      "smvs_soaptemplatequestionassignment_AsyncOperations": "System Jobs",
+      "smvs_soaptemplatequestionassignment_BulkDeleteFailures": "Bulk Delete Failures",
+      "smvs_soaptemplatequestionassignment_DuplicateBaseRecord": "Duplicate Records (smvs_soaptemplatequestionassignment_DuplicateBaseRecord)",
+      "smvs_soaptemplatequestionassignment_DuplicateMatchingRecord": "Duplicate Records (smvs_soaptemplatequestionassignment_DuplicateMatchingRecord)",
+      "smvs_soaptemplatequestionassignment_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "smvs_soaptemplatequestionassignment_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "smvs_soaptemplatequestionassignment_ProcessSession": "Process Sessions",
+      "smvs_soaptemplatequestionassignment_SyncErrors": "Sync Errors",
+      "smvs_soaptemplatequestionassignmentid": "SOAP Template Question Assignment",
+      "smvs_Template": "Template",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "SOAP Template Question Assignments",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "SOAP Template Question Assignments (Views)",
+    "Name": "_smvs_soaptemplatequestionassignment_views",
+    "RelatedEntityName": "SOAP Template Question Assignments",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "269b258e-4928-4c88-a977-b1c1108afe09": "SOAP Template Question Assignment Associated View",
+      "2f037195-5c56-49cb-a510-a3cfb73bce2e": "Active SOAP Template Question Assignments",
+      "63ddb39f-54b6-467c-aea5-0dc01a759098": "Inactive SOAP Template Question Assignments",
+      "c7a528b2-be48-4f5e-b875-4283792c4ea1": "SOAP Template Question Assignment Lookup View",
+      "d0036098-406a-46e8-908d-8749d7c3b1fc": "SOAP Template Question Assignment Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Include in Action Plan (SOAP Template Question Assignments)",
+    "Name": "smvs_soaptemplatequestionassignment_smvs_include_in_action_plan",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_include_in_action_plan",
+        "OptionSetReferenceEntityName": "SOAP Template Question Assignments"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "smvs_include_in_action_plan",
+    "RelatedEntityName": "SOAP Template Question Assignments",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (SOAP Template Question Assignments)",
+    "Name": "smvs_soaptemplatequestionassignment_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "SOAP Template Question Assignments"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "SOAP Template Question Assignments",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (SOAP Template Question Assignments)",
+    "Name": "smvs_soaptemplatequestionassignment_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "SOAP Template Question Assignments"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "SOAP Template Question Assignments",
+    "Type": "OptionSetInfo"
+  }
+]

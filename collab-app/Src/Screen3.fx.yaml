@@ -1,0 +1,8 @@
+Screen3 As screen:
+
+    Component1_1 As Component1:
+        InputList: |-
+            =ForAll(Search(Addresses, Self.SearchText,"name"),{Id:'Address (customeraddressid)',Title:'Address Name'})
+        X: =150
+        Y: =39
+

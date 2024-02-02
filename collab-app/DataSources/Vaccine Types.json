@@ -1,0 +1,131 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "smvs_vaccinetypes",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "smvs_vaccinetype",
+    "MaxGetRowsCount": 500,
+    "Name": "Vaccine Types",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "smvs_cvx_code": "CVX Code (IIS)",
+      "smvs_cvx_code_iis": "CVX Code (smvs_cvx_code_iis)",
+      "smvs_cvx_code_value": "CVX Code (smvs_cvx_code_value)",
+      "smvs_manufacturer": "Manufacturer",
+      "smvs_manufacturer_code": "Manufacturer Code",
+      "smvs_manufacturer_name": "Manufacturer Name",
+      "smvs_name": "Name",
+      "smvs_smvs_vaccinetype_msemr_appointmentemr": "Appointments (EMR)",
+      "smvs_smvs_vaccinetype_msemr_codeableconcept": "Codeable Concepts",
+      "smvs_sub_service_vaccine_type": "Sub Services",
+      "smvs_unit_of_volume": "Unit of Volume",
+      "smvs_unit_of_volume_code": "Unit of Volume Code (IIS)",
+      "smvs_vaccinetype_AsyncOperations": "System Jobs",
+      "smvs_vaccinetype_BulkDeleteFailures": "Bulk Delete Failures",
+      "smvs_vaccinetype_DuplicateBaseRecord": "Duplicate Records (smvs_vaccinetype_DuplicateBaseRecord)",
+      "smvs_vaccinetype_DuplicateMatchingRecord": "Duplicate Records (smvs_vaccinetype_DuplicateMatchingRecord)",
+      "smvs_vaccinetype_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "smvs_vaccinetype_ndccode": "Ndc Codes",
+      "smvs_vaccinetype_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "smvs_vaccinetype_ProcessSession": "Process Sessions",
+      "smvs_vaccinetype_SyncErrors": "Sync Errors",
+      "smvs_vaccinetypeid": "Vaccine Type (IIS)",
+      "smvs_volume": "Volume (IIS)",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Vaccine Types",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Vaccine Types (Views)",
+    "Name": "_smvs_vaccinetype_views",
+    "RelatedEntityName": "Vaccine Types",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2f1bf8e4-8196-4e21-bd23-29a441f8802f": "Active Vaccine Types",
+      "63c48d58-c698-46dc-ba84-3c460336960c": "Vaccine Type Lookup View",
+      "8216e262-7583-4cf0-b01f-cacfcf8aac6f": "Inactive Vaccine Types",
+      "9e60e6e7-2103-4bea-840b-d2d1ebe5e336": "Vaccine Type Advanced Find View",
+      "9edf23e0-4e11-ec11-b6e6-000d3a570f02": "All Vaccine Types",
+      "d9c4a23a-1984-444d-8ec2-609112765a6f": "Vaccine Type Associated View"
+    }
+  },
+  {
+    "DisplayName": "Unit of Volume",
+    "Name": "smvs_unitofvolume",
+    "OptionSetInfoNameMapping": {
+      "153940000": "Milliliters(mL)",
+      "916310001": "Milligram(mg)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "smvs_unit_of_volume",
+        "OptionSetReferenceEntityName": "Vaccine Types"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "smvs_unit_of_volume",
+    "RelatedEntityName": "Vaccine Types",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Vaccine Types)",
+    "Name": "smvs_vaccinetype_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Vaccine Types"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Vaccine Types",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Vaccine Types)",
+    "Name": "smvs_vaccinetype_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Vaccine Types"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Vaccine Types",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "smvs_localise_website_ontents",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "smvs_localise_website_ontent",
+    "MaxGetRowsCount": 500,
+    "Name": "Localize Website Contents",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "smvs_aboutorganization": "About Organization",
+      "smvs_appointment_success_message": "Appointment Success Message",
+      "smvs_eligibilitytext": "Eligibility Text",
+      "smvs_insurance_message": "Insurance Message",
+      "smvs_language_code": "Language",
+      "smvs_localise_website_ontent_AsyncOperations": "System Jobs",
+      "smvs_localise_website_ontent_BulkDeleteFailures": "Bulk Delete Failures",
+      "smvs_localise_website_ontent_DuplicateBaseRecord": "Duplicate Records (smvs_localise_website_ontent_DuplicateBaseRecord)",
+      "smvs_localise_website_ontent_DuplicateMatchingRecord": "Duplicate Records (smvs_localise_website_ontent_DuplicateMatchingRecord)",
+      "smvs_localise_website_ontent_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "smvs_localise_website_ontent_parent_local": "Localize Website Contents",
+      "smvs_localise_website_ontent_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "smvs_localise_website_ontent_ProcessSession": "Process Sessions",
+      "smvs_localise_website_ontent_SyncErrors": "Sync Errors",
+      "smvs_localise_website_ontentid": "Website Text",
+      "smvs_msemr_healthcareservicecategory_smvs_loca": "Services",
+      "smvs_no_clinic_message": "Name",
+      "smvs_no_clinic_msg": "No Clinic Message",
+      "smvs_no_insurance_message": "No Insurance Message",
+      "smvs_parent_localize_website_content": "Parent Localize Website Content",
+      "smvs_screening_information": "Screening Information",
+      "smvs_terms_and_conditions_acceptance": "Terms and Conditions Acceptance",
+      "smvs_termsandcondition": "Terms and Condition",
+      "smvs_translation_count": "Translation Count",
+      "smvs_translation_status": "Translation Status",
+      "smvs_waitlist_information": "Waitlist Information",
+      "smvs_waitlist_message": "Waitlist Message",
+      "smvs_website_content_msemr_healthservice": "Sub Services",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Localize Website Contents",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Localize Website Contents (Views)",
+    "Name": "_smvs_localise_website_ontent_views",
+    "RelatedEntityName": "Localize Website Contents",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0a03f4c2-626f-47f6-812d-d29254d9de61": "Localise Website Content Lookup View",
+      "137df254-916e-4ad9-a21b-f7f19bf0f4b3": "Localise Website Content Associated View",
+      "1698b227-20e4-4f62-8ac1-e4a6749f8a5d": "Inactive Website Contents",
+      "63ebba9e-5311-ec11-b6e6-000d3a57036a": "All Website Contents",
+      "6634d934-11ad-4c5c-9184-1992be8105b6": "Localise Website Content Advanced Find View",
+      "a89015f8-5a19-4825-81e5-6f6ddafa64ea": "Active Website Contents",
+      "babf62bb-d5cc-eb11-bacc-000d3a5738c1": "All Translation Website Content"
+    }
+  },
+  {
+    "DisplayName": "Status (Localize Website Contents)",
+    "Name": "smvs_localise_website_ontent_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Localize Website Contents"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Localize Website Contents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Localize Website Contents)",
+    "Name": "smvs_localise_website_ontent_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Localize Website Contents"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Localize Website Contents",
+    "Type": "OptionSetInfo"
+  }
+]

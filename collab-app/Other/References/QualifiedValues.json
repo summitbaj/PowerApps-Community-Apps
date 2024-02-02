@@ -1,0 +1,64 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_msemr_healthcareservice_forms",
+      "Namespace": "Sub Services (Forms)",
+      "Values": {
+        " quick create form": "2c98a5da-41c7-eb11-bacc-000d3a990aa6",
+        "Information": "9be11a63-8131-49d3-8e77-bcc0201e23b4",
+        "MVS Main form": "52aaf186-ef74-eb11-a812-000d3a8e7d53"
+      }
+    },
+    {
+      "Kind": "default.cds_smvs_vaccinetype_forms",
+      "Namespace": "Vaccine Types (Forms)",
+      "Values": {
+        "Information": "c36d49bb-80c4-4aee-bbfb-dfe5739286e6"
+      }
+    },
+    {
+      "Kind": "default.cds_msemr_codeableconcept_forms",
+      "Namespace": "Codeable Concepts (Forms)",
+      "Values": {
+        "Alpha Code": "0ba64e46-362f-4934-8576-19e8e0920eb6",
+        "Information": "68299a25-0f31-4d16-bbd7-b25cc7395d75"
+      }
+    },
+    {
+      "Kind": "default.cds_smvs_soapnote_forms",
+      "Namespace": "SOAP Notes (Forms)",
+      "Values": {
+        "Information": "60a82c4d-0d4b-4907-81b5-fdb423b67a43"
+      }
+    },
+    {
+      "Kind": "default.cds_smvs_soaptemplatequestionassignment_forms",
+      "Namespace": "SOAP Template Question Assignments (Forms)",
+      "Values": {
+        "Information": "e29c70e1-c37f-45cf-a0e3-f1f0c27ff8f1"
+      }
+    },
+    {
+      "Kind": "default.cds_smvs_soapquestion_forms",
+      "Namespace": "SOAP Questions (Forms)",
+      "Values": {
+        "Information": "4eb6d851-22b7-406d-8914-900c296cc00b"
+      }
+    },
+    {
+      "Kind": "default.cds_smvs_localise_website_ontent_forms",
+      "Namespace": "Localize Website Contents (Forms)",
+      "Values": {
+        " quick create form": "8d36c09c-79ca-eb11-bacc-000d3a99093d",
+        "Information": "4b29a045-969e-446b-8074-fa6b1df62846"
+      }
+    },
+    {
+      "Kind": "default.cds_customeraddress_forms",
+      "Namespace": "Addresses (Forms)",
+      "Values": {
+        "Information": "df5bef3a-9237-40bd-a27c-2cd7fd434706"
+      }
+    }
+  ]
+}

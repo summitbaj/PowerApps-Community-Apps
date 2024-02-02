@@ -1,0 +1,97 @@
+Screen2 As screen:
+
+    Gallery3 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Items: =colTermsAndConditions
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =176
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        Label2 As label:
+            Height: =130
+            OnSelect: =Select(Parent)
+            Text: =Mid(ThisItem.Value, Find("<li", ThisItem.Value)+17, Len(ThisItem.Value))
+            Width: =496
+            ZIndex: =1
+
+        TextInput2 As text:
+            Default: =Mid(ThisItem.Value, Find("<li", ThisItem.Value)+17, Len(ThisItem.Value))
+            DisplayMode: =If(locSelectedTermsAndCondition.Value=ThisItem.Value,DisplayMode.Edit,DisplayMode.View)
+            Height: =160
+            Mode: =TextMode.MultiLine
+            OnSelect: =Select(Parent)
+            Width: =496
+            ZIndex: =2
+
+        Icon1 As icon.Edit:
+            Height: =36
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =If(
+                    IsBlank(locSelectedTermsAndCondition),
+                    UpdateContext({locSelectedTermsAndCondition: ThisItem}),
+                    locSelectedTermsAndCondition.Value = ThisItem.Value,
+                    UpdateContext({locSelectedTermsAndCondition: Blank()})
+                )
+            Width: =26
+            X: =540
+            Y: =12
+            ZIndex: =3
+
+        Icon2 As icon.Cancel:
+            Height: =46
+            Icon: =Icon.Cancel
+            OnSelect: =Remove(colTermsAndConditions,ThisItem)
+            Width: =40
+            X: =540
+            Y: =57
+            ZIndex: =4
+
+    TextInput1 As text:
+        Default: =First('Localize Website Contents').'Terms and Condition'
+        Height: =428
+        Mode: =TextMode.MultiLine
+        Width: =490
+        X: =750
+        Y: =3
+        ZIndex: =2
+
+    Button2 As button:
+        OnSelect: |-
+            =Set(locTermsAndConditions,First('Localize Website Contents').'Terms and Condition');
+            ClearCollect(colTermsAndConditions, FirstN(
+                Split(
+                    locTermsAndConditions,
+                    "</li>"
+                ),
+                CountRows(
+                    Split(
+                        locTermsAndConditions,
+                        "</li>"
+                    )
+                ) - 1
+            ))
+        Text: ="Button"
+        X: =921
+        Y: =464
+        ZIndex: =3
+
+    HtmlText1 As htmlViewer:
+        Height: =264
+        HtmlText: ="<ul>"&Concat(Gallery3.AllItems,"<li tabindex='0'>"&TextInput2.Text&"</li>")&"</ul>"
+        Width: =644
+        X: =722
+        Y: =504
+        ZIndex: =4
+
+    Button3 As button:
+        OnSelect: |-
+            =Collect(colTermsAndConditions,{Value:""})
+        Text: ="Create"
+        X: =426
+        Y: =675
+        ZIndex: =5
+
