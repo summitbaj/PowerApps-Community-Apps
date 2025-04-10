@@ -1,46 +1,50 @@
-PowerApps Community Apps
-Welcome to the PowerApps Community Apps repository! This collection features a variety of PowerApps applications designed to showcase the capabilities of Microsoft PowerApps and provide practical solutions for common scenarios.
+# PowerApps Community Apps
 
-Available Applications
-Library Management App (LibraryManagement_20201030061957.zip): An app to manage library resources, including book check-in/check-out and inventory tracking.​
+Welcome to the **PowerApps Community Apps** repository! This collection contains sample applications built using Microsoft PowerApps. These apps serve as templates and inspiration for developers looking to create business or personal productivity solutions with PowerApps.
 
-Merry Christmas Piano (Merry Christmas Piano (1).msapp): A festive piano app to celebrate the holiday season with music.​
+## 📦 Available Applications
 
-Monthly Planner App (MontlyPlannerApp_20201031012041.zip): An app to help organize and plan monthly tasks and events.​
+| App Name                 | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| Library Management App   | Manage library resources, including book check-in/check-out and inventory. |
+| Merry Christmas Piano    | A festive piano app to celebrate the holiday season.                        |
+| Monthly Planner App      | Organize and plan monthly tasks and events.                                 |
+| Photo Gallery            | Browse and organize a collection of photos.                                 |
+| Shopping Cart            | Simulate a basic e-commerce shopping experience.                            |
+| Superman vs. Darkseid    | A fun, themed interactive app for DC Comics fans.                           |
 
-Photo Gallery (PhotoGallery_20201119160729.zip): An app to showcase and organize photo collections.​
+## 🚀 Getting Started
 
-Shopping Cart (ShoppingCart_20210429155844.zip): An app that simulates a shopping cart experience for e-commerce scenarios.​
+To use any of the apps in this repository:
 
-Superman vs. Darkseid (SupermanVsDarkseid_20201025162024.zip): An interactive app themed around the iconic battle between Superman and Darkseid.​
+1. **Download the App File**
+   - Files are available in `.zip` or `.msapp` format.
+   - Click on the desired file and download it to your computer.
 
-Getting Started
-To explore and use these applications:
+2. **Import into PowerApps**
+   - Go to [PowerApps Studio](https://make.powerapps.com/)
+   - Select **Apps** > **Import canvas app**
+   - Upload the downloaded file and follow the steps to complete the import.
 
-Download the App Package: Click on the desired app's .zip or .msapp file in the repository and download it to your local machine.​
+3. **Customize as Needed**
+   - After importing, you can modify the app or use it as-is to learn and explore.
 
-Import into PowerApps:
+## 🤝 Contributing
 
-Log in to your PowerApps account.​
+Want to share your own PowerApp with the community?
 
-Navigate to the "Apps" section.​
+1. Fork this repository
+2. Add your `.zip` or `.msapp` file with a short description
+3. Open a pull request
 
-Click on "Import canvas app" and select the downloaded file.​
+**Please make sure:**
+- You have the rights to share the app
+- No sensitive or proprietary data is included
 
-Follow the prompts to complete the import process.​
+## 📄 License
 
-Customize and Use: Once imported, you can customize the app to fit your needs or use it as-is to explore its features.​
+This repository is licensed under the [MIT License](LICENSE).
 
-Contributing
-We welcome contributions to this repository! If you have a PowerApps application that you'd like to share with the community:
+## 🔗 Credits
 
-Fork the Repository: Click on the "Fork" button at the top right of this page to create your own copy of the repository.​
-
-Add Your App: Upload your app's .zip or .msapp file to your forked repository.​
-
-Submit a Pull Request: Once your app is added, submit a pull request to this repository with a brief description of your app and its functionality.​
-
-Please ensure that your submission does not contain any sensitive information and that you have the rights to share the content.​
-
-License
-This project is licensed under the MIT License.
+This repo is based on the original project by [summitbaj-zz](https://github.com/summitbaj-zz/PowerApps-Community-Apps). Visit the original for more community-created apps and updates.
